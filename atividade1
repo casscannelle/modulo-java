@@ -51,6 +51,7 @@ c) carro === branco
 true
 
 d) var cavalo = carro == “preto” ? “cinza” : “marron”;
+false
 
 e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada
 de 3.000? Demonstre a operação.
