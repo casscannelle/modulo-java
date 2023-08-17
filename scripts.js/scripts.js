@@ -4,9 +4,9 @@ const emailInput = document.querySelector("#email")
 const telefoneInput = document.querySelector("#telefone")
 const cepInput = document.querySelector("#cep")
 const cidadeInput = document.querySelector("#cidade")
-const estadoInput = document.querySelector("#estado")
+const estadoInput = document.querySelector("#uf")
 
-console.log(form, nameInput, emailInput, telefoneInput, cepInput, cidadeInput, estadoInput)
+console.log(form, nameInput, emailInput, telefoneInput, cepInput)
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -47,7 +47,7 @@ function isEmailValid(email) {
 function isTelefoneValid(telefone) {
 
     const telefoneRegex = new RegExp(
-        /^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$/
+        /^(?:(?:\+|00)?(55)\s?)?(?:\(?([1-9][0-9])\)?\s?)?(?:((?:9\d|[2-9])\d{3})\-?(\d{4}))$/
     )
 
     if(telefoneRegex.test(telefone)) {
