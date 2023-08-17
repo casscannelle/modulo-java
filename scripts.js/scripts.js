@@ -12,8 +12,8 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     if(nameInput.value === "") {
-        alert("Por favor, preencha o seu nome");
-        return;
+        alert("Por favor, insira seu e-mail corretamente");
+            return;
     }
 
     if(emailInput.value === "" || !isEmailValid(emailInput.value)){
@@ -31,7 +31,7 @@ form.addEventListener("submit", (event) => {
         return;
     }
 
-
+    
 function isEmailValid(email) {
 
     const emailRegex = new RegExp(
